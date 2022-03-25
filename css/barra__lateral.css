@@ -1,0 +1,33 @@
+/* Barra lateral es el contenedor general */
+.lateral{
+    transition: 0.3s;
+    height: 100vh;
+    width: 6vw;
+    border-right: 3px solid gray;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.lateral:hover{
+    width: 30vw;
+}
+
+.lateral__titulo{
+    width: calc(100% - 20px);
+    background-color: rgb(199, 199, 199);
+    border-bottom: 3px solid rgba(177, 177, 1, 0.966);
+    padding: 10px;
+}
+
+.lateral__pestanas__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: skyblue;
+}
+.lateral__pestanas__lista__item{
+    font-size: 14px;
+    padding: 7px 0;
+}
+
+
