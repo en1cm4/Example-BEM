@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estadarizacion.css">
+    <link rel="stylesheet" href="css/barra__lateral.css">
+
+    <title>Sap Bussines</title>
+</head>
+
+<body>
+
+    <div class="lateral">
+        <!-- Bloque -->
+
+        <div class="lateral__elementos">
+            <div class="lateral__contexto">
+                <h2 class="lateral__titulo">Menu principal</h2>
+            </div>
+
+            <div class="lateral__pestanas">
+
+                <ul class="lateral__pestanas__lista">
+                    <li class="lateral__pestanas__lista__item">Modulos</li>
+                    <li class="lateral__pestanas__lista__item">Arrastras y vincular</li>
+                    <li class="lateral__pestanas__lista__item">Menu de usuario</li>
+                </ul>
+
+            </div>
+
+            <div class="lateral__modulos">
+                <ul class="lateral__modulos__lista">
+                    <li class="lateral__modulos__lista__item">
+
+                        <!--
+                            Se encuentran dentro de la clase align para centrarlos verticalmente y de no ser el caso
+                            al tratar de agregar submodulos estos tambien se alinearian verticalmente junto con el texto
+                            y la imagen.
+                        -->
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/finanzas.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Finanzas</span>
+                        </div>
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/oportunidades.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Oportunidades</span> 
+                        </div>
+                    </li>
+
+                    <li id="mod__ventas" class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/ventas.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Ventas - Clientes</span> 
+                        </div>
+
+                        <!-- Lista desplegable nivel 2 -->
+                        <ul id="submod__lista__ventas" class="lateral__submodulo lateral__submodulo__disable"> 
+                            <li class="lateral__submodulo__item">
+                                <span> Acuerdo Goblal de ventas</span>
+                                
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Oferta de ventas </span>
+                            
+                            </li>
+                            <li id="submod__OrdenDeVenta"class="lateral__submodulo__item">
+                                <span> Orden de venta </span>
+                                <!-- Opciones de submodulo -->
+                                <ul id="opciones__lista__OrdenDeVenta" class="lateral__opciones lateral__opciones__disable">
+                                    <li class="lateral__opciones__item">Eliminar Orden de venta</li>
+                                    <li class="lateral__opciones__item">Nueva orden de venta</li>
+                                    <li class="lateral__opciones__item">Buscar Orden de venta</li>       
+                                </ul>
+                            
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Entrega </span>
+                            
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Devolucion </span>
+                            </li>
+                        </ul>
+                        <!-- Fin de lista desplegable nivel 2 -->
+                     
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/compras.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Compras -Proveedores</span> 
+                        </div>
+
+                    
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/socios.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Socios de Negocios</span> 
+                        </div>
+
+                        
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/gestion de bancos.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Gestion de bancos</span> 
+                        </div>
+
+                        
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/inventario.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Inventario</span> 
+                        </div>
+                        
+
+                        
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/recursos.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Recursos</span> 
+                        </div>
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/mrp.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">MRP</span> 
+                        </div>
+
+                        
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/modulos__opciones.js"></script>
+
+</body>
+
+</html>
