@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estadarizacion.css">
+    <link rel="stylesheet" href="css/barra__lateral.css">
+    <link rel="stylesheet" href="css/ventana__flotante.css">
+    <link rel="stylesheet" href="css/ventana__financias.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Sap Bussines</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <img id="mostrar__lateral" class="header__img" src="img/list.png" alt="">
+    </header>
+
+    <div id="lateral" class="lateral">
+        <!-- Bloque -->
+
+        <div class="lateral__elementos">
+            <div class="lateral__contexto">
+                <h2 class="lateral__titulo">Menu principal</h2>
+                <img id="ocultar__lateral" class="lateral__img" src="img/flecha.png" alt="">
+            </div>
+
+            <div class="lateral__pestanas">
+
+                <ul class="lateral__pestanas__lista">
+                    <li class="lateral__pestanas__lista__item">Modulos</li>
+                    <li class="lateral__pestanas__lista__item">Arrastras y vincular</li>
+                    <li class="lateral__pestanas__lista__item">Menu de usuario</li>
+                </ul>
+
+            </div>
+
+            <div class="lateral__modulos">
+                <ul class="lateral__modulos__lista">
+                    <li class="lateral__modulos__lista__item">
+
+                        <!--
+                            Se encuentran dentro de la clase align para centrarlos verticalmente y de no ser el caso
+                            al tratar de agregar submodulos estos tambien se alinearian verticalmente junto con el texto
+                            y la imagen.
+                        -->
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/finanzas.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Finanzas</span>
+                        </div>
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/oportunidades.png"
+                                alt="img">
+                            <span class="lateral__modulos__lista__texto">Oportunidades</span>
+                        </div>
+                    </li>
+
+                    <li id="mod__ventas" class="md_ventas lateral__modulos__lista__item">
+
+                        <div class="md_ventas lateral__modulos__lista__align">
+                            <img class="md_ventas lateral__modulos__lista__img" src="img/menu desplegable/ventas.png"
+                                alt="img">
+                            <span class="md_ventas lateral__modulos__lista__texto">Ventas - Clientes</span>
+                        </div>
+
+                        <!-- Lista desplegable nivel 2 -->
+                        <ul id="submod__lista__ventas" class="lateral__submodulo lateral__submodulo__disable">
+                            <li class="lateral__submodulo__item">
+                                <span> Acuerdo Goblal de ventas</span>
+
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Oferta de ventas </span>
+
+                            </li>
+                            <li id="submod__OrdenDeVenta" class="lateral__submodulo__item">
+                                <span> Orden de venta </span>
+                                <!-- Opciones de submodulo -->
+                                <ul id="opciones__lista__OrdenDeVenta"
+                                    class="lateral__opciones lateral__opciones__disable">
+                                    <li class="lateral__opciones__item">Eliminar Orden de venta</li>
+                                    <li id="ventana__flotante" class="lateral__opciones__item">Nueva orden de venta</li>
+                                    <li class="lateral__opciones__item">Buscar Orden de venta</li>
+                                </ul>
+
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Entrega </span>
+
+                            </li>
+                            <li class="lateral__submodulo__item">
+                                <span> Devolucion </span>
+                            </li>
+                        </ul>
+                        <!-- Fin de lista desplegable nivel 2 -->
+
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/compras.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Compras -Proveedores</span>
+                        </div>
+
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/socios.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Socios de Negocios</span>
+                        </div>
+
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/gestion de bancos.png"
+                                alt="img">
+                            <span class="lateral__modulos__lista__texto">Gestion de bancos</span>
+                        </div>
+
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/inventario.png"
+                                alt="img">
+                            <span class="lateral__modulos__lista__texto">Inventario</span>
+                        </div>
+
+
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/recursos.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">Recursos</span>
+                        </div>
+
+                    </li>
+
+                    <li class="lateral__modulos__lista__item">
+
+                        <div class="lateral__modulos__lista__align">
+                            <img class="lateral__modulos__lista__img" src="img/menu desplegable/mrp.png" alt="img">
+                            <span class="lateral__modulos__lista__texto">MRP</span>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Ventana flotante para editar-->
+
+    <div id="fondo__flotante" class="fondo__flotante">
+        <div class="ventana">
+            <div class="ventana__contexto">
+                <h2 class="ventana__titulo">
+                    Orden de venta
+                </h2>
+            </div>
+
+            <!-- 
+                    Se usa esta clase para que cuando se exceda el tamaño
+                    predefinido se pueda scroolear sin afectar los bordes de la
+                    ventana flotante.
+                 -->
+            <div class="ventana__scroll">
+
+                <div class="ventana__detalles">
+                    <ul class="ventana__detalles__lista">
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Cliente</span>
+                            <input class="ventana__detalles__item__control" type="number" name="" id="">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">N*</span>
+                            <select name="" id="">
+                                <option value="0">Primario</option>
+                                <option value="1">Secundario</option>
+                                <option value="2">Terciario</option>
+                                <option value="3">Cuarto</option>
+                            </select>
+                            <input class="ventana__detalles__item__control" readonly value="265" type="text">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Nombre</span>
+                            <input class="ventana__detalles__item__control" value="Norm Thompson" type="text" name=""
+                                id="">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Estado</span>
+                            <input class="ventana__detalles__item__control" readonly value="abiertos" type="text">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Persona de contacto</span>
+                            <select class="ventana__detalles__item__control" name="" id="">
+                                <option value="">Norm Thompson</option>
+                                <option value="">Unkown</option>
+                                <option value="">Unkown</option>
+                            </select>
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Fecha de contabilización</span>
+                            <input class="ventana__detalles__item__control" value="22/11/2019" type="text">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Numero de referencia</span>
+                            <input class="ventana__detalles__item__control" type="number">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Fecha de entrega</span>
+                            <input class="ventana__detalles__item__control" type="date">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <Select class="ventana__detalles__item__texto">
+                                <!-- Como tal no es un texto pero lleva el lugar de uno
+                                    por lo cual y para quen no se deforme el input que le sigue se le agrego
+                                    la clase de texto
+                                -->
+                                <option value="">Moneda SN</option>
+                            </Select>
+                            <input class="ventana__detalles__item__control" value="CLP" type="text">
+                        </li>
+                        <li class="ventana__detalles__item">
+                            <span class="ventana__detalles__item__texto">Fecha de documento</span>
+                            <input class="ventana__detalles__item__control" value="22/11/19" type="text">
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- 
+                    El contenedor tabla lleva dentro las pestañas
+                    y los controles de cada pestaña segun corresponda.
+                -->
+                <div class="contenedor__tabla">
+
+
+                    <div class="ventana__pestanas">
+                        <ul class="ventana__pestanas__lista">
+                            <li class="ventana__pestanas__item">
+                                <span class="ventana__pestanas__item-texto">Contenido</span>
+                            </li>
+                            <li class="ventana__pestanas__item">
+                                <span class="ventana__pestanas__item-texto">Logistica</span>
+                            </li>
+                            <li id="pestana__financias" class="ventana__pestanas__item">
+                                <span class="ventana__pestanas__item-texto">Financias</span>
+                            </li>
+                            <li class="ventana__pestanas__item">
+                                <span class="ventana__pestanas__item-texto">Anexos</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <div id="contenedor__variable" class="variable__contenido">
+                        <!-- 
+                            Le puse este nombre porque al tener pestañas el contenido
+                            de aqui adentro tendria que variar segun la pestaña que se
+                            elija.
+                        -->
+                        <div class="pestana__logistica">
+                            <ul class="pestana__logistica__lista">
+                                <li class="pestana__logistica__item">
+
+                                    <div class="pestana__logistica__alignY">
+                                        <!-- 
+                                            Clase utilizada para alinear verticalmente,
+                                            de no usarse esta clase y aplicar el alineamiento
+                                            sobre la clase 'pestana__logistica__item' elemento
+                                            textarea tambien se alinearia junto con estos elementos.
+                                         -->
+                                        <span class="pestana__logistica__texto">Destino</span>
+                                        <select name="" id="">
+                                            <option value="">de despacho</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="pestana__logistica__div__textarea">
+                                        <textarea class="pestana__logistica__item__textarea" name="" id="" cols="30"
+                                            rows="10"></textarea>
+                                        <img class="pestana__logistica__item__img" src="img/elipsis.png" alt="">
+                                    </div>
+
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <div class="pestana__logistica__alignY">
+                                        <span class="pestana__logistica__texto">Destino</span>
+                                        <select name="" id="">
+                                            <option value="">de facturacion</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="pestana__logistica__div__textarea">
+                                        <textarea class="pestana__logistica__item__textarea" name="" id="" cols="30"
+                                            rows="10"></textarea>
+                                        <img class="pestana__logistica__item__img" src="img/elipsis.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <span class="pestana__logistica__texto">Forma de envio</span>
+                                    <select name="" id="">
+                                        <option value="">UPS Ground</option>
+                                    </select>
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <span class="pestana__logistica__texto">Responsables</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                            </ul>
+
+
+                            <ul class="pestana__logistica__lista2">
+                                <!-- 
+                                    Se crea otra clase porque en la anterior
+                                    se uso justifi-content: space-between
+                                    lo cual separa los elementos ambos extremos
+                                -->
+                                <li class="pestana__logistica__item2">
+                                    <input class="pestana__logistica__checkbox" type="checkbox">
+                                    <span class="pestana__logistica__texto">Imprimir hoja de picking</span>
+
+                                </li>
+                                <li class="pestana__logistica__item2">
+                                    <input class="pestana__logistica__checkbox" type="checkbox">
+                                    <span class="pestana__logistica__texto">Documento de aprovis.p.lineas de almacen que
+                                        no</span>
+                                </li>
+                                <li class="pestana__logistica__item2">
+                                    <input class="pestana__logistica__checkbox" type="checkbox" name="" id="">
+                                    <span class="pestana__logistica__texto">Documento de aprovisamiento p.lineas de
+                                        almacenamiento</span>
+                                </li>
+                                <li class="pestana__logistica__item2">
+                                    <input class="pestana__logistica__checkbox" type="checkbox" name="" id="">
+                                    <span class="pestana__logistica__texto">Autorizado</span>
+                                </li>
+                                <li class="pestana__logistica__item2">
+                                    <input class="pestana__logistica__checkbox" type="checkbox" name="" id="">
+                                    <span class="pestana__logistica__texto">Permetir entrega parcial</span>
+
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <span class="pestana__logistica__texto">Observaciones sobre empresa</span>
+                                    <input type="text" class="pestana__logistica__control">
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <nav class="pestana__logistica__texto">Nombre canal SN</nav>
+                                    <input type="text" class="pestana__logistica__control">
+                                </li>
+                                <li class="pestana__logistica__item">
+                                    <nav class="pestana__logistica__texto">Contacto canal SN</nav>
+                                    <select class="pestana__logistica__control">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="gestion">
+                    <ul class="gestion__lista">
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Empleado de ventas</span>
+                            <select class="gestion__item__control" name="" id="">
+                                <option value="">Sales manager</option>
+                            </select>
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Propietario</span>
+                            <input class="gestion__item__control" type="text">
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Comentarios</span>
+                            <textarea class="gestion__item__control gestion__item__textarea" name="" id="" cols="30"
+                                rows="10"></textarea>
+                        </li>
+                    </ul>
+
+                    <ul class="gestion__lista">
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Total de descuento</span>
+                            <input class="gestion__item__control" readonly type="text">
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Descuento <input class="gestion__item__descuento"
+                                    type="text"> % </span>
+                            <input class="gestion__item__control" type="text">
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Gastos adicionales</span>
+                            <input class="gestion__item__control" type="text">
+                        </li>
+                        <li class="gestion__item">
+                            <input type="checkbox" name="" id="">
+                            <span class="gestion__item__texto">Redondeo</span>
+                            <input value="CLP 0" class="gestion__item__control" type="tel" name="" id="">
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Impuesto</span>
+                            <input type="text" readonly class="gestion__item__control" name="" id="">
+                        </li>
+                        <li class="gestion__item">
+                            <span class="gestion__item__texto">Total documento</span>
+                            <input value="CLP 0" class="gestion__item__control" type="text">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="boton">
+                    <button class="boton__btn">
+                        Crear
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de ventana flotante  -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/modulos__opciones.js"></script>
+    <script src="js/pestanas.js"></script>
+    <script src="js/barrra__lateral.js"></script>
+    <script src="js/vetana__flotante.js"></script>
+
+</body>
+
+</html>

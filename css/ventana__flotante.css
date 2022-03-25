@@ -1,0 +1,240 @@
+.fondo__flotante{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.ventana{
+    position: fixed;
+    width: 50vw;
+    height: 80vh;
+    background-color: white;
+    margin: 10vh 25vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ventana__titulo{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+    border-bottom: 3px solid rgb(223, 223, 18);
+}
+.ventana__scroll{
+    overflow: auto;
+    height: 90%;
+}
+/* Fin de estilos para la ventana */
+
+
+/* Estilos para los detalles */
+.ventana__detalles__lista{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+}
+.ventana__detalles__item{
+    font-size: 12px;
+    margin: 2px 10px ;
+    width: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.376);
+}
+.ventana__detalles__item__control{
+    min-width: 50%;
+    border: 1px solid rgb(116, 116, 116);
+}
+.ventana__detalles__item__control:focus{
+    background-color: rgba(236, 214, 92, 0.63);
+    outline: none;
+}
+.ventana__detalles__item__texto{
+    width: 100%;
+}
+/* Fin de la ventana de detalles */
+
+
+
+
+.contenedor__tabla{
+    width: 90%;
+    margin: 20px 5%;
+}
+.ventana__pestanas__lista{
+    list-style: none;
+    display: flex;
+}
+.ventana__pestanas__item{
+    width: 25%;
+    padding: 3px 0;
+    padding-right: 5px;
+    font-size: 14px;
+    text-align: end;
+    background-color: rgb(125, 154, 248);
+    background-image: url("../img/borde.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.ventana__pestanas__item:hover{
+    background-color: rgb(0, 60, 255);
+}
+
+
+
+/* Estilos para la pestaña Logistica */
+
+
+
+.pestana__logistica{
+    border: 1px solid rgb(172, 171, 171);
+    display: flex;
+}
+.pestana__logistica__lista{
+    width: calc(50% - 20px);
+    margin: 0 10px;
+}
+.pestana__logistica__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.pestana__logistica__texto{
+    font-size: 12px;
+    width: 100%;
+}
+.pestana__logistica__control{
+    width: 50%;
+}
+.pestana__logistica__alignY{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.pestana__logistica__div__textarea{
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.pestana__logistica__item__textarea{
+    width: 80%;
+    height: 50px;
+}
+.pestana__logistica__item__img{
+    background-color: rgba(255, 196, 0, 0.616);
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 0 2px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.pestana__logistica__lista2{
+    list-style: none;
+    width: calc(50% - 10px);
+    padding-right: 10px;
+}
+.pestana__logistica__item2{
+    display: flex;
+    margin: 5px 0;
+}
+.pestana__logistica__checkbox{
+    margin-right: 5px;
+}
+/* Fin de la pestaña logistica */
+
+
+
+/* Gestion  */
+.gestion{
+    display: flex;
+}
+.gestion__lista{
+    width: calc(50% - 20px);
+    padding: 0 10px;
+    list-style: none;
+}
+.gestion__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.gestion__item__texto{
+    font-size: 14px;
+}
+.gestion__item__control{
+    width: 50%;
+}
+.gestion__item__textarea{
+    height: 70px;
+}
+.gestion__item__descuento{
+    width: 20px;
+}
+
+/* Boton */
+.boton{
+    width: 100%;
+}
+.boton__btn{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 2px 5px;
+    box-shadow: 1px 0 3px black;
+    border-left: 7px solid orange;
+    
+    background: linear-gradient(
+        rgb(255, 247, 173),
+        rgb(245, 225, 43)
+    );
+}
+
+
+
+/* Responsive desing */
+
+@media only screen and (max-width: 1000px){
+    .ventana{
+        width: 80vw;
+        margin: 10vh 10vw;
+    }
+}
+@media only screen and (max-width: 500px){
+    .ventana__detalles__item{
+        width: 80%;
+        margin: 5px 10%;
+    }
+    .pestana__logistica{
+        flex-direction: column;
+    }
+    .pestana__logistica__lista{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .pestana__logistica__lista2{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .gestion{
+        flex-direction: column;
+    }
+    .gestion__lista{
+        width: calc(80% - 20px);
+        margin: 0 10%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .ventana{
+        width: 90vw;
+        margin: 10vh 5vw;
+    }
+}
